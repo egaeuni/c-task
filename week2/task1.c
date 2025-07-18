@@ -4,6 +4,7 @@
 ✔️ 출력 : 시험 성적을 출력한다. 
 */
 
+
 #include <stdio.h>
 
 int main(void) {

@@ -5,6 +5,7 @@
 ✔️ 출력 : 한 줄에 하나씩, 증가하는 순서대로 소수를 출력한다.
 */
 
+
 #include <stdio.h>
 
 int main(void){
