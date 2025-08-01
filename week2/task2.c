@@ -13,34 +13,33 @@
 #include <stdio.h>
 
 int main(void) {
-  int x, y;
+    int X, Y;
 
-  while (1)
-  {
-    printf("X 좌표값을 입력하세요: ");
-    scanf("%d", &x);
+    printf("X 좌표를 입력하세요 (-1000 ~ 1000, 0 제외): ");
+    scanf("%d", &X);
 
-    printf("Y 좌표값을 입력하세요: ");
-    scanf("%d", &y);
+    printf("Y 좌표를 입력하세요 (-1000 ~ 1000, 0 제외): ");
+    scanf("%d", &Y);
 
-    if (x == 0 || y == 0 || x < -1000 || x > 1000 || y < -1000 || y > 1000) {
-      printf("좌표값을 다시 입력하세요. \n");
-    } else {
-        if (x > 0 && y > 0) {
-          printf("1\n");
-          break;
-        } else if (x < 0 && y > 0) {
-          printf("2\n");
-          break;
-        } else if (x < 0 && y < 0) {
-          printf("3\n");
-          break;
+    while (1)
+    {
+        if(X<=-1000 || X>=1000 || Y<=-1000 || Y>=1000 || X==0 || Y==0) {
+            printf("좌표를 다시 입력하세요 (-1000 ~ 1000, 0 제외) \n");
         } else {
-          printf("4\n");
-          break;
+            if (X > 0 && Y > 0) {
+                printf("1\n");
+                break;
+            } else if (X < 0 && Y > 0) {
+                printf("2\n");
+                break;
+            } else if (X < 0 && Y < 0) {
+                printf("3\n");
+                break;
+            } else {
+                printf("4\n");
+                break;
+            }
         }
-    } 
-  }
-  
-  return 0 ;
+    }
+    return 0;
 }
