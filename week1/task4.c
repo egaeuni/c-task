@@ -3,5 +3,12 @@
 #include <stdio.h>
 
 int main(void){
+  int var1 = 100;
+  float var2 = 200.0;
+  char var3 = 'A';
+
+  printf("var1은 정수이며 값은 %c 입니다. \n", var1);
+  printf("var2은 실수이며 값은 %d 입니다. \n", (int)var2);
+  printf("var3은 문자이며 값은 %d 입니다. \n", var3);
   
 }
