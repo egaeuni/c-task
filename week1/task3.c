@@ -2,12 +2,5 @@
 #include <stdio.h>
 
 int main(void){
-  int A,B,C,result;
-  scanf("%d %d %d", &A, &B, &C);
-
-  result = (A > B) ? ( (A > C) ? ( (B > C) ? B : C ) : A ) : ( (A > C) ? A : C );
-
-  printf("%d\n", result);
-
-  return 0;
+  
 }

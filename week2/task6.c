@@ -9,31 +9,5 @@
 #include <stdio.h>
 
 int main(void){
-  int M, N;
-  while (1)
-  {
-    printf("자연수 M,N을 입력하세요: ");
-    scanf("%d %d", &M, &N);
-    if (M > N){
-      printf("다시 입력하세요.\n");
-    } else {
-      for (int i = M; i <= N; i++){
-        if (i < 2) continue;
-
-        int isPrime = 1;
-        for (int j = 2; j * j <= i; j++) {
-            if (i % j == 0) {
-                isPrime = 0;  
-                break;
-            }
-        }
-
-        if (isPrime) {
-            printf("%d\n", i);
-        }
-      }
-      break;
-    }
-  }
-  return 0;
+  
 }

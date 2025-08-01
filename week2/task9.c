@@ -42,23 +42,5 @@ LCM(A, B) = (A × B) / GCD
 #include <stdio.h>
 
 int main(void) {
-    long long A, B;
-    printf("두 수를 입력하세요: ");
-    scanf("%lld %lld", &A, &B);
-
-    // GCD(최대공약수) 구하기 (유클리드 호제법)
-    long long a = A;
-    long long b = B;
-    long long r;
-
-    while (b != 0) {
-        r = a % b;
-        a = b;
-        b = r;
-    }
-
-    long long lcm = (A * B) / a;
-    printf("%lld\n", lcm);
-
-    return 0;
+    
 }

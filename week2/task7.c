@@ -19,38 +19,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int a, b, c;
-
-    while (1) 
-    {
-        printf("1부터 6사이 숫자를 3개 입력하세요: ");
-        scanf("%d %d %d", &a, &b, &c);
-
-        if (a < 1 || a > 6 || b < 1 || b > 6 || c < 1 || c > 6) {
-            printf("다시 입력하세요.\n");
-            continue;
-        }
-
-        int result = 0;
-
-        if (a == b && b == c) {
-            result = 10000 + a * 1000;
-        } else if (a == b || a == c) {
-            result = 1000 + a * 100;
-        } else if (b == c) {
-            result = 1000 + b * 100;
-        } else {
-            int max = a;
-            if (b > max) max = b;
-            if (c > max) max = c;
-            result = max * 100;
-        }
-
-        printf("%d\n", result);
-        break;
-    }
-
-    return 0;
+    
 }
 
 

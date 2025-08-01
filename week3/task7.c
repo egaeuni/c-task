@@ -21,20 +21,5 @@
 #include <string.h>
 
 int main(void) {
-    char words[5][16]; 
-
-    for (int i = 0; i < 5; i++) {
-        scanf("%s", words[i]);
-    }
-
-    for (int col = 0; col < 15; col++) {
-        for (int row = 0; row < 5; row++) {
-            if (col < strlen(words[row])) {
-                printf("%c", words[row][col]);
-            }
-        }
-    }
-
-    printf("\n");
-    return 0;
+    
 }

@@ -15,39 +15,5 @@
 #include <stdio.h>
 
 float Average(int arr[], int numSubjects) {
-    int max = 0;
-    float sum = 0.0;
-
-    for(int i = 0; i < numSubjects; i++) {
-        if(arr[i] > max) {
-            max = arr[i];
-        }
-    }
-
-    for(int i = 0; i < numSubjects; i++) {
-        sum += (double)arr[i] / max * 100;
-    }
-
-    return sum / numSubjects;
-}
-
-int main() {
-    int numSubjects;
-    float newAverage;
-    printf("시험 본 과목의 개수를 입력하세요: ");
-    scanf("%d", &numSubjects);
-
-    int arr[numSubjects];
-
-    printf("성적을 입력하세요: ");
-    for(int i = 0; i < numSubjects; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    newAverage = Average(arr, numSubjects);
-    printf("새로운 평균은 %f\n", newAverage);
     
-
-
-    return 0;
 }
