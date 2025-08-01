@@ -3,14 +3,12 @@
 #include <stdio.h>
 
 int main(void){
-  int val1 = 100;
-  // float val2 = 200.0;도 괜찮음
-  double val2 = 200.0;
-  char val3 = 'A';
+  int var1 = 100;
+  float var2 = 200.0;
+  char var3 = 'A';
 
-  printf("val1은 정수이며 값은%c 입니다.\n",val1);
-  printf("val2은 실수이며 값은%d 입니다.\n",(int)val2);
-  printf("val3은 문자이며 값은%d입니다.\n",val3);
-
-  return 0;
+  printf("var1은 정수이며 값은 %c 입니다. \n", var1);
+  printf("var2은 실수이며 값은 %d 입니다. \n", (int)var2);
+  printf("var3은 문자이며 값은 %d 입니다. \n", var3);
+  
 }
