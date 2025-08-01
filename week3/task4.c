@@ -9,31 +9,5 @@
 #include <stdio.h>
 
 int main(void){
-  int N, M;
-  printf("행, 열을 입력하세요: ");
-  scanf("%d %d", &N, &M);
-
-  int A[N][M], B[N][M], sum[N][M];
-  printf("A 배열을 입력하세요: ");
-  for(int i=0; i<N; i++){
-    for(int j=0; j<M; j++){
-      scanf("%d", &A[i][j]);
-    }
-  }
-
-  printf("B 배열을 입력하세요: ");
-  for(int i=0; i<N; i++){
-    for(int j=0; j<M; j++){
-      scanf("%d", &B[i][j]);
-    }
-  }
-
-  for(int i=0; i<N; i++){
-    for(int j=0; j<M; j++){
-      printf("%d ", (A[i][j] + B[i][j]));
-    }
-    printf("\n");
-  }
-
-  return 0;
+  
 }

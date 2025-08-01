@@ -7,28 +7,5 @@
 #include <stdio.h>
 
 int main(void){
-  int arr[9][9];
-  int max, pointI, pointJ;
-
-  printf("배열을 채우세요: \n");
-  for(int i=0; i<9; i++){
-    for(int j=0; j<9; j++){
-      scanf("%d", &arr[i][j]);
-    }
-  }
-
-  for(int i=0; i<9; i++){
-    for(int j=0; j<9; j++){
-      if(arr[i][j] > max){
-        max = arr[i][j];
-        pointI = i;
-        pointJ = j;
-      }
-    }
-  }
-
-  printf("%d\n", max);
-  printf("%d %d\n", pointI+1, pointJ+1);
-
-  return 0;
+  
 }

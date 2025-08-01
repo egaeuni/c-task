@@ -11,34 +11,6 @@
 #include <stdio.h>
 
 int main(void){
-  int count, max, min;
-
-  printf("정수의 개수를 입력하세요: ");
-  scanf("%d", &count);
-
-  int intCount[count];
-
-  printf("n개의 정수를 입력하세요: ");
-  for(int i=0; i<count; i++){
-    scanf("%d", &intCount[i]);
-  }
-
-  max = intCount[0];
-  for(int i=0; i<count; i++){
-      if(intCount[i] > max) {
-        max = intCount[i];
-      }
-  }
   
-  min = intCount[0];
-  for(int i=0; i<count; i++){
-      if(intCount[i] < min) {
-        min = intCount[i];
-      }
-  }
-
-  printf("%d %d\n", min, max);
-
-  return 0;
 }
 

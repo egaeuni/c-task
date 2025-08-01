@@ -23,17 +23,5 @@
 #include <stdio.h>
 
 int main(void) {
-    int N;
-    printf("창문 및 사람의 수를 입력하세요: ");
-    scanf("%d", &N);
-
-    int count = 0, i = 1;
-
-    while (i * i <= N) {
-        count++;
-        i++;
-    }
-
-    printf("%d\n", count);
-    return 0;
+    
 }

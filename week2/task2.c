@@ -13,34 +13,5 @@
 #include <stdio.h>
 
 int main(void) {
-  int x, y;
-
-  while (1)
-  {
-    printf("X 좌표값을 입력하세요: ");
-    scanf("%d", &x);
-
-    printf("Y 좌표값을 입력하세요: ");
-    scanf("%d", &y);
-
-    if (x == 0 || y == 0 || x < -1000 || x > 1000 || y < -1000 || y > 1000) {
-      printf("좌표값을 다시 입력하세요. \n");
-    } else {
-        if (x > 0 && y > 0) {
-          printf("1\n");
-          break;
-        } else if (x < 0 && y > 0) {
-          printf("2\n");
-          break;
-        } else if (x < 0 && y < 0) {
-          printf("3\n");
-          break;
-        } else {
-          printf("4\n");
-          break;
-        }
-    } 
-  }
   
-  return 0 ;
 }
