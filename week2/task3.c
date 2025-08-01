@@ -20,30 +20,27 @@
 #include <stdio.h>
 
 int main(void) {
-  int H, M;
+    int H, M;
 
-  while (1) {
-    printf("24시간을 기준으로 시(H)와 분(M)을 입력하세요:  ");
-    scanf("%d %d", &H, &M);
+    while (1)
+    {
+        printf("24시간을 기준으로 시(H)와 분(M)을 입력하세요:\n");
+        scanf("%d %d", &H, &M);
 
-    if (H < 0 || H > 23 || M < 0 || M > 59) {
-      printf("24시간을 기준으로 시(H)와 분(M)을 다시 입력하세요. \n");
-    } else {
-      
-      if (H == 0){
-        H = 24;
-      }
-      H = ((H * 60 + M) - 45) / 60;
+        if (H < 0 || H >23 || M < 00 || M > 59) {
+            printf("24시간을 기준으로 다시 시(H)와 분(M)을 입력하세요.\n");
+        } else {
+            int total = (H * 60 + M) - 45;
 
-      if (M == 0){
-        M = 60;
-      }
-      M = ((H * 60 + M) - 45) % 60;
-      
-      printf("%d %d\n", H, M);
-      break;
+            if (total < 0) {
+                total += 24 * 60;
+            }
+
+            H = total / 60;
+            M = total % 60;
+        } 
+        printf("%d %d\n", H, M);
+        break;
     }
-    
-  }
-  return 0;
+    return 0;
 }
