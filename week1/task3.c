@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 int main(void){
-  int A,B,C,result;
-  scanf("%d %d %d", &A, &B, &C);
+    int A, B, C;
+    scanf("%d %d %d", &A, &B, &C);
 
-  result = (A > B) ? ( (A > C) ? ( (B > C) ? B : C ) : A ) : ( (A > C) ? A : C );
+    int result = (A > B) ? ((A > C ) ? ((B > C) ? B : C) : A ) : ((A > C ) ? C : A) ; 
+    // [조건] ? [참] : [거짓]
 
-  printf("%d\n", result);
-
-  return 0;
+    printf("%d", result);
+    
+    return 0;
 }
