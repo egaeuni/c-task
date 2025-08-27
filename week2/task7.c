@@ -21,36 +21,28 @@
 int main(void) {
     int a, b, c;
 
-    while (1) 
-    {
-        printf("1부터 6사이 숫자를 3개 입력하세요: ");
+    while(1) {
+        printf("3개의 주사위 눈을 빈 칸을 사이에 두고 입력하시오: ");
         scanf("%d %d %d", &a, &b, &c);
-
+        
         if (a < 1 || a > 6 || b < 1 || b > 6 || c < 1 || c > 6) {
-            printf("다시 입력하세요.\n");
+            printf("주사위 눈은 1에서 6 사이의 값이어야 합니다. 다시 입력하시오 \n");
             continue;
         }
 
         int result = 0;
 
-        if (a == b && b == c) {
-            result = 10000 + a * 1000;
-        } else if (a == b || a == c) {
-            result = 1000 + a * 100;
-        } else if (b == c) {
-            result = 1000 + b * 100;
+        if((a == b) && (b == c)) {
+            result = 10000 + (a * 1000);
+        } else if (a == b || a == c || b == c) {
+            result = 1000 + (a==b ? a : (a==c ? a : b)) * 100;
         } else {
-            int max = a;
-            if (b > max) max = b;
-            if (c > max) max = c;
+            int max = a > b ? (a > c ? a : c) : (b > c ? b : c);
             result = max * 100;
         }
 
-        printf("%d\n", result);
-        break;
+        printf("상금은 %d원 입니다.\n", result);
     }
-
-    return 0;
 }
 
 
