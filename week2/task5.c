@@ -11,19 +11,21 @@
 
 int main(void){
   int line;
+  while(1) {
+    printf("출력할 줄 수를 입력하세요: ");
+    scanf("%d", &line);
 
-  printf("줄 수를 입력하세요: ");
-  scanf("%d", &line);
-
-  for (int i = 1; i < line+1; i++)
-  {
-    for (int j = 0; j < line-i; j++){
-      printf(" ");
+    for (int i=1; i<=line; i++){
+      for (int j=0; j<line-i; j++){
+        printf(" ");
+      }
+    
+      for (int j=0; j<i; j++){
+        printf("*");
+      }
+      printf("\n");
     }
-    for (int j = 0; j < i; j++){
-      printf("*");
-    }
-    printf("\n");
-  }
+    break;
+  }  
   return 0;
 }
