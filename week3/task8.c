@@ -10,41 +10,5 @@
 void frequent(char word[]);
 
 int main(void) {
-    char arr[1000001]; 
-    scanf("%1000000s", arr);
-    frequent(arr);
-    return 0;
-}
-
-void frequent(char word[]) {
-    int freq[26] = {0};
-    for (int i = 0; word[i] != '\0'; i++) {
-        char ch = word[i];
-        if ((ch >= 'a') && (ch <= 'z')) {
-            ch = ch - 'a' + 'A';
-        }
-        if ((ch >= 'A') && (ch <= 'Z')) {
-            freq[ch - 'A']++;
-        }
-    }
-
-    int max = 0;
-    char result = '?';
-    int count = 0;
-
-    for (int i = 0; i < 26; i++) {
-        if (freq[i] > max) {
-            max = freq[i];
-            result = 'A' + i;
-            count = 1;
-        } else if (freq[i] == max) {
-            count++;
-        }
-    }
-
-    if (count > 1) {
-        printf("?\n");
-    } else {
-        printf("%c\n", result);
-    }
+    
 }

@@ -9,27 +9,5 @@
 #include <stdio.h>
 
 int main(void){
-  int count, v, vCount=0;
-
-  printf("정수의 개수를 입력하세요: ");
-  scanf("%d", &count);
-
-  int arr[count];
-  for (int i = 0; i < count; i++)
-  {
-    scanf("%d", &arr[i]);
-  }
   
-  printf("찾으려는 정수 v: ");
-  scanf("%d", &v);
-
-   for (int i = 0; i < count; i++)
-  {
-    if(v == arr[i]){
-      vCount++;
-    }
-  }
-  printf("v의 개수: %d\n", vCount);
-
-  return 0;
 }
